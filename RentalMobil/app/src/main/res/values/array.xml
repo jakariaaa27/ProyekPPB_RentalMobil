@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="daftarmobil">
+        <item>Avanza</item>
+        <item>Xenia</item>
+        <item>Honda Jazz</item>
+        <item>Mobilio</item>
+    </string-array>
+    <string-array name="hero">
+        <item>Avanza</item>
+        <item>Xenia</item>
+        <item>Honda Jazz</item>
+        <item>Mobilio</item>
+    </string-array>
+    <string-array name="hero_desc">
+        <item>Berikut Deskripsi Avanza</item>
+        <item>Berikut Deskripsi Xenia</item>
+        <item>Berikut Deskripsi Honda Jazz</item>
+        <item>Berikut Deskripsi Mobilio</item>
+    </string-array>
+    <string-array name="hero_details">
+        <item>Nomor Plat E111111</item>
+        <item>Nomor Plat E22222</item>
+        <item>Nomor Plat E33333</item>
+        <item>Nomor Plat E44444</item>
+    </string-array>
+    <array name="hero_picture">
+        <item>@drawable/avanza</item>
+        <item>@drawable/xenia</item>
+        <item>@drawable/jazz</item>
+        <item>@drawable/mobilio</item>
+    </array>
+</resources>

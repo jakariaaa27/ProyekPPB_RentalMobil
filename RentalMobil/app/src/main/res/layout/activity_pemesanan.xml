@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jakaria.rentalmobil.Pemesanan">
+
+    <LinearLayout
+        android:id="@+id/parent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rental Mobil Jaya Makmur"
+            android:textSize="50sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/parent2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:text="Nama pemesan  :"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/txtpemesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="0"
+                android:hint="Masukkan Nama"
+                android:textAlignment="center"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:text="Pilih Mobil    :"
+                android:inputType="text"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Pilih Mobil"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnjam"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jam Rental"/>
+
+            <EditText
+                android:id="@+id/txtjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Jam Rental"
+                android:textAlignment="center"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btntanggal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tanggal Rental" />
+
+            <EditText
+                android:id="@+id/txttanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textAlignment="center"
+                android:hint="Tanggal Rental"
+                android:enabled="false"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnpesan"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Pesan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:onClick="tampilSecondActivity"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
