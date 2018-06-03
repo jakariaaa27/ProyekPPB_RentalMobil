@@ -3,6 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
     android:layout_height="match_parent"
     tools:context="com.example.jakaria.rentalmobil.Pemesanan">
 
@@ -31,7 +35,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:textSize="15sp"
@@ -59,7 +64,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:textSize="15sp"
@@ -84,9 +90,12 @@
 
             <Button
                 android:id="@+id/btnjam"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:textColor="@color/white"
                 android:text="Jam Rental"/>
 
             <EditText
@@ -111,10 +120,13 @@
 
             <Button
                 android:id="@+id/btntanggal"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
                 android:layout_weight="1"
-                android:hint="Tanggal Rental" />
+                android:textColor="@color/white"
+                android:text="Tanggal Rental"/>
 
             <EditText
                 android:id="@+id/txttanggal"
@@ -130,12 +142,13 @@
 
         <Button
             android:id="@+id/btnpesan"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Pesan"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="100dp"
-            android:onClick="tampilSecondActivity"/>
+            android:background="@color/colorPrimary"
+            android:onClick="tampilSecondActivity"
+            android:text="Pesan"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </RelativeLayout>

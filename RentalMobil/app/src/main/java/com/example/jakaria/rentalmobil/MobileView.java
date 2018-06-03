@@ -1,69 +1,48 @@
 package com.example.jakaria.rentalmobil;
 
-import android.content.Context;
-import android.content.Intent;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
+public class MobileView {
+    private int id_mobil;
+    private String nama;
+    private String deskripsi;
+    private String gambar;
 
-public class MobileView extends RecyclerView.ViewHolder {
-
-
-    public ImageView picture;
-    public TextView name;
-    public TextView description;
-    public MobileView(LayoutInflater inflater, ViewGroup parent) {
-        super(inflater.inflate(R.layout.activity_mobile_view, parent, false));
-        picture = (ImageView) itemView.findViewById(R.id.card_image);
-        name = (TextView) itemView.findViewById(R.id.card_title);
-        description = (TextView) itemView.findViewById(R.id.card_text);
-        itemView.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Context context = v.getContext();
-                Intent intent = new Intent(context, MobileDetail.class);
-                intent.putExtra(MobileDetail.EXTRA_POSITION, getAdapterPosition());
-                context.startActivity(intent);
-            }
-        });
-
-        // Adding Snackbar to Action Button inside card
-        Button button = (Button)itemView.findViewById(R.id.action_button);
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Action is pressed",
-                        Snackbar.LENGTH_LONG).show();
-            }
-        });
-
-        ImageButton favoriteImageButton =
-                (ImageButton) itemView.findViewById(R.id.favorite_button);
-        favoriteImageButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Added to Favorite",
-                        Snackbar.LENGTH_LONG).show();
-            }
-        });
-
-        ImageButton shareImageButton = (ImageButton) itemView.findViewById(R.id.share_button);
-        shareImageButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Share article",
-                        Snackbar.LENGTH_LONG).show();
-            }
-        });
+    public MobileView (int id_mobil, String nama, String deskripsi, String gambar) {
+        this.id_mobil = id_mobil;
+        this.nama = nama;
+        this.deskripsi = deskripsi;
+        this.gambar = gambar;
     }
 
+    public int getId_mobil() {
+        return id_mobil;
+    }
+
+    public void setId_mobil(int id_mobil) {
+        this.id_mobil = id_mobil;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
+    }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
+    }
 }
+

@@ -5,10 +5,11 @@ package com.example.jakaria.rentalmobil;
  */
 
 public class AppVar {
-    public static final String LOGIN_URL = "http://192.168.43.93/course/login.php";
+    public static final String LOGIN_URL = "http://192.168.43.113/course/login.php";
 
-    public static final String KEY_EMAIL = "email";
+    public static final String URL = "http://192.168.43.113/course/";
+    public static final String KEY_USER = "email";
     public static final String KEY_PASSWORD = "password";
 
-    public static final String LOGIN_SUCCES = "succes";
+    public static final String LOGIN_SUCCESS = "success";
 }

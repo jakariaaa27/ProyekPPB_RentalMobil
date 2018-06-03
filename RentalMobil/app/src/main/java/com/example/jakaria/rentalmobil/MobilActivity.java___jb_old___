@@ -102,7 +102,11 @@ public class MobilActivity extends AppCompatActivity implements SwipeRefreshLayo
                                         product.getString("gambar")
                                 ));
                             }
-                            
+
+                            //creating adapter object and setting it to recyclerview
+//                            WarnetAdapter adapter = new WarnetAdapter(WarnetActivity.this, warnetList);
+//                            recyclerView.setAdapter(adapter);
+//                            sortArrayList();
                             mAdapter.notifyDataSetChanged();
                             swipe.setRefreshing(false);
                         } catch (JSONException e) {
